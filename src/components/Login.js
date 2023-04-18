@@ -20,7 +20,7 @@ const login = (props) => {
                 <Form>
                     <Google>
                         <img src="/images/google.svg" alt="" />
-                        Sign in with google
+                        Sign in with Google
                     </Google>
                 </Form>
             </Section>
