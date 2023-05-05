@@ -179,8 +179,40 @@ const Item = styled.a`
     }
 `
 
-const Sude = styled.a`
+const Sude = styled(Artcard)`
+    padding: 8px 0 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 
+    a {
+        color: black;
+        padding: 4px 12px 4px 12px;
+        font-size: 12px;
+
+        &:hover {
+            color: #0a66c2;
+
+        }
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        &:last-child {
+            color: rgba(0, 0, 0, 0.6);
+            text-decoration: none;
+            border-top: 1px solid #06cec2;
+            padding: 12px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.08);
+                color: rgba(0, 0, 0, 0.8)
+            }
+        }
+    }
 `
 
 export default LeftSide;
