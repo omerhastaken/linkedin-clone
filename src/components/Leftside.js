@@ -105,35 +105,35 @@ const Widget = styled.div`
     padding-top: 12px;
     padding-bottom: 12px;
 
-    & < a {
+    & > a {
         text-decoration: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 4px 12px;
-    }
-
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.08);
-
-        div {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            
-            span {
-                font-size: 12px;
-                line-height: 1.333;
-                &:firstchild{
-                    color: rgba(0, 0, 0, 0.6);
-                }
-                &:nth-child(2) {
-                    color: rgba(0, 0, 0, 1);
-                }
-            }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.08);
         }
-    }
-`
+        div {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          span {
+            font-size: 12px;
+            line-height: 1.333;
+            &:first-child {
+              color: rgba(0, 0, 0, 0.6);
+            }
+            &:nth-child(2) {
+              color: rgba(0, 0, 0, 1);
+            }
+          }
+        }
+      }
+      svg {
+        color: rgba(0, 0, 0, 1);
+      }
+    `;
 
 const Item = styled.div``
 
