@@ -29,8 +29,14 @@ const RightSide = (props) => {
                         </div>
                     </li>
                 </Feedlist>
+                <Recommendations>Wiev all recommendations
+                <img src="/images/right-icon.svg"/>
+                </Recommendations>
                 
             </Followcard>
+            <Sudem>
+                <img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" />
+            </Sudem>
         </Container>
     )
 }
@@ -103,4 +109,20 @@ const Avatar = styled.div`
     height: 48px;
     margin-right: 8px;
 `
+
+const Recommendations = styled.div`
+    cursor: pointer;
+    color: #0a66c2;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+
+`
+
+const Sudem = styled(Followcard)`
+    width: 100%;
+    height: 100%;
+`
+
 export default RightSide;

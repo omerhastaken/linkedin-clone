@@ -121,7 +121,7 @@ const Search = styled.div`
             border: none;
             box-shadow: none;
             background-color: #eef3f8;
-            border-radius: 2px;
+            border-radius: 12px;
             color: rgba(0, 0, 0, 0.9);
             width: 218px;
             padding: 0 8px 0 40px;
