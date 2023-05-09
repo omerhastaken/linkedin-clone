@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Main = (props) => {
     return (
         <Container>
-            <ShareBox>Share
+            <ShareBox>
                 <div>
                     <img src="/images/user.svg" />
                     <button>Start a post</button>
@@ -29,6 +29,24 @@ const Main = (props) => {
                     </button>
                 </div>
             </ShareBox>
+            <div>
+                <Article>
+                    <SharedActor>
+                        <a>
+                            <img src="/images/user.svg" />
+
+                            <div>
+                                <span>Title</span>
+                                <span>Info</span>
+                                <span>Date</span>
+                            </div>
+                        </a>
+                        <button>
+                            <img src="/images/ellipsis.svg" />
+                        </button>
+                    </SharedActor>
+                </Article>
+            </div>
         </Container>
     )
 }
@@ -94,9 +112,45 @@ const ShareBox = styled(CommonCard)`
         &:nth-child(2) {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 4px;
+            
+            button {
+                img {
+                    margin: 0 4px 0 -2px;
+                }
+                span {
+                    color: #70b5f9;
+                }
+            }
         }
     }
 
+`
+
+const Article = styled(CommonCard)`
+    padding: 0;
+    margin: 0 0 8px;
+    overflow: visible;
+
+`
+
+const SharedActor = styled.div`
+    padding-right: 48px;
+    flex-wrap: nowrap;
+    padding: 12px 16px 0;
+    margin-bottom: 8px;
+    align-items: center;
+    display: flex;
+
+    a {
+        margin-right: 12px;
+        flex-grow: 1;
+        overflow: hidden;
+        display: flex;
+        text-decoration: none;
+        
+    }
 `
 
 export default Main;

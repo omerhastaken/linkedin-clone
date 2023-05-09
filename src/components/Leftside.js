@@ -174,6 +174,7 @@ const Item = styled.a`
 
 const Sude = styled(Artcard)`
     padding: 8px 0 0;
+    cursor: pointer;
     text-align: left;
     display: flex;
     flex-direction: column;
