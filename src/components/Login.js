@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { connect } from "react-redux";
 
 const login = (props) => {
     return (
@@ -166,4 +167,14 @@ const Google = styled.button`
 
     }
 `
-export default login;
+
+const mapStateToProps = (state) => {
+    return {};
+};
+
+
+const mapDispatchToProps = (dispatch) => ({});
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps) (login);
