@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LeftSide from "./LeftSide";
+import LeftSide from "./Leftside";
 import Main from "./Main";
 import RightSide from "./RightSide";
 
